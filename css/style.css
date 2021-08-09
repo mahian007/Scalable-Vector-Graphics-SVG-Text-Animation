@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, skyblue, pink, violet, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+    min-height: 100vh;
+}
+
+#mahian {
+    width: 800px;
+    height: 300px;
+}
+
+#mahian text {
+    fill: transparent;
+    stroke-width: 2px;
+    stroke: white;
+    stroke-dasharray: 850;
+    stroke-dashoffset: 0;
+    cursor: pointer;
+    font-family: arial;
+    animation: mahian 6s linear forwards;
+}
+
+@keyframes mahian {
+    0% {
+        stroke-dashoffset: 0;
+    }    
+
+    20% {
+        stroke-dashoffset: 500;
+        fill: lightcyan;
+    }
+
+    40% {
+        stroke-dashoffset: 850;
+        fill: #40F48E;
+    }
+
+    80% {
+        stroke-dashoffset: 1700;
+        fill: transparent;
+    }
+    
+    100% {
+        stroke-dashoffset: 1700;
+        fill: #fff;
+    }
+}
